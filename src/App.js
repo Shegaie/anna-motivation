@@ -1,12 +1,12 @@
 import FamilyCard from "./components/FamilyCard";
 import wallpaper from "./assets/landscape.png"
 import React, {useEffect, useRef} from "react";
-import lofiMp3Asset from "./assets/Studio Ghibli Lofi Playlist Vol. 1.mp3"
+import lofiMp3Asset from "./assets/Music/Studio Ghibli Lofi Playlist Vol. 1.mp3"
 
 function App() {
   useEffect(() => {
       const audio = document.getElementById("lofi-audio-player");
-      audio.volume = 0.4;
+      audio.volume = 0.1;
       }, [])
 
   return (
@@ -14,7 +14,7 @@ function App() {
       <audio
           id="lofi-audio-player"
           autoPlay
-          loopnpm
+          loop
           preload={"auto"}
           src={lofiMp3Asset}>
         Your browser does not support the

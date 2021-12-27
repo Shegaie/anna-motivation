@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import "./animatePicture.css"
 import clsx from "clsx";
@@ -6,11 +6,6 @@ import clsx from "clsx";
 export default function Picture(props) {
     const [isMouseOver, setIsMouseOver] = useState(false);
     const [jello, setJello] = useState(false);
-    const [audioPlayerRef, setAudioPlayerRef] = useState(null)
-
-    useEffect(() => {
-        setAudioPlayerRef(props.audioPlayerRef);
-    }, [props.audioPlayerRef]);
 
     return (
         <>
