@@ -14,7 +14,7 @@ function App() {
       <audio
           id="lofi-audio-player"
           autoPlay
-          loop
+          loopnpm
           preload={"auto"}
           src={lofiMp3Asset}>
         Your browser does not support the
