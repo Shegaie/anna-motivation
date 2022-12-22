@@ -1,7 +1,8 @@
 import FamilyCard from "./components/FamilyCard";
-import wallpaper from "./assets/landscape.png"
+import wallpaper from "./assets/night-city.jpg"
 import React, {useEffect, useRef} from "react";
 import lofiMp3Asset from "./assets/Music/Studio Ghibli Lofi Playlist Vol. 1.mp3"
+import lofimp3Asset2 from "./assets/Music/Lofi Hip Hop Chillhop Music Mix GEMN Chill Lo fi Hip Hop Beats FREE 2021.mp3"
 
 function App() {
   useEffect(() => {
@@ -16,7 +17,7 @@ function App() {
           autoPlay
           loop
           preload={"auto"}
-          src={lofiMp3Asset}>
+          src={lofimp3Asset2}>
         Your browser does not support the
         <code>audio</code> element.
       </audio>
